@@ -1,0 +1,1 @@
+web: java -jar target/cliente.jar
