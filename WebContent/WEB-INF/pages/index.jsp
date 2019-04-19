@@ -8,6 +8,7 @@
 <body>
 
 	<h2>Formulário de Cadastro de Cliente</h2>
+	<h3>Formulário de Cadastro do Diretor</h3>
 	<form:form method="POST" action="/addCliente">
 		<table>
 			<tr>
@@ -46,6 +47,7 @@
 				<td><form:label path="dataNascimento">Data de Nascimento:</form:label></td>
 				<td><form:input path="dataNascimento" /></td>
 			</tr>
+			<h3>Formulário de Cadastro do Filme</h3>
 			<tr>
 				<td colspan="2"><input type="submit" value="Submit" /></td>
 			</tr>
