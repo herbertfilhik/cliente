@@ -8,7 +8,7 @@
 <body>
 
 	<h2>Formulário de Cadastro de Cliente</h2>
-	<form:form method="POST" action="/cliente/addCliente">
+	<form:form method="POST" action="/spring-webmvc/addCliente">
 		<table>
 			<tr>
 				<td><form:label path="nome">Nome:</form:label></td>

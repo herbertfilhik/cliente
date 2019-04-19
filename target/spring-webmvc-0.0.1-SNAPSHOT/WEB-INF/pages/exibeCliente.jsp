@@ -45,8 +45,8 @@
 			<td>${dataNascimento}</td>
 		</tr>
 	</table>
-	<a href="/cliente/cliente">Cadastro</a>
-	<a href="/cliente/listaClientes">Lista</a>
+	<a href="/spring-webmvc/cliente">Cadastro</a>
+	<a href="/spring-webmvc/listaClientes">Lista</a>
 
 </body>
 </html>
