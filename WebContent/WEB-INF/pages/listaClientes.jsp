@@ -42,7 +42,7 @@
 		</table>
 
 	</c:if>
-	<a href="/cliente">Cadastro</a>
+	<a href="/index">Cadastro</a>
 
 </body>
 </html>
