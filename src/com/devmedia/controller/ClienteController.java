@@ -18,7 +18,7 @@ import com.devmedia.model.Cliente;
 @Controller
 public class ClienteController {
 
-	@RequestMapping(value = "/index", method = RequestMethod.GET)
+	@RequestMapping(value = {"/", "index"}, method = RequestMethod.GET)
 	public ModelAndView cliente() {
 		return new ModelAndView("cliente", "command", new Cliente());
 	}
