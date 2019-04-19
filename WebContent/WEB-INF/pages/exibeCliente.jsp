@@ -45,7 +45,7 @@
 			<td>${dataNascimento}</td>
 		</tr>
 	</table>
-	<a href="/cliente">Cadastro</a>
+	<a href="/index">Cadastro</a>
 	<a href="/listaClientes">Lista</a>
 
 </body>
