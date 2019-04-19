@@ -20,7 +20,7 @@ public class ClienteController {
 
 	@RequestMapping(value = {"/", "index"}, method = RequestMethod.GET)
 	public ModelAndView cliente() {
-		return new ModelAndView("cliente", "command", new Cliente());
+		return new ModelAndView("index", "command", new Cliente());
 	}
 
 	@RequestMapping(value = "/addCliente", method = RequestMethod.POST)
