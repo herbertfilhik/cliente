@@ -1,1 +1,1 @@
-web: java -jar target/cliente.jar
+web: mvn spring-boot:run
