@@ -51,7 +51,7 @@
 			</tr>
 		</table>
 	</form:form>
-	<a href="/cliente/listaClientes">Lista</a>
+	<a href="/spring-webmvc/listaClientes">Lista</a>
 
 </body>
 </html>
