@@ -29,8 +29,6 @@ public class ClienteController {
 			HttpServletRequest request) {
 
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
-
-		cliente.isValid();
 		
 		model.addAttribute("nome", cliente.getNome());
 		model.addAttribute("nomeFilme", cliente.getNomeFilme());
