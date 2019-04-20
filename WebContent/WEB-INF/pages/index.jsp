@@ -6,10 +6,9 @@
 <title>Cadastro de Cliente</title>
 </head>
 <body>
-
 	<h2>Formulário de Cadastro de Cliente</h2>
 	<h3>Formulário de Cadastro do Diretor e do Filme</h3>
-	<form:form method="POST" action="/spring-webmvc/addCliente">
+	<form:form method="POST" action="/addCliente">
 		<table>
 			<tr>
 				<td><form:label path="nome">Nome:</form:label></td>
@@ -54,13 +53,12 @@
 			<tr>
 				<td><form:label path="dataLancamento">Data de Lançamento:</form:label></td>
 				<td><form:input path="dataLancamento" required="required" /></td>
-			</tr>			
+			</tr>
 			<tr>
 				<td colspan="2"><input type="submit" value="Submit" /></td>
 			</tr>
 		</table>
 	</form:form>
-	<a href="/spring-webmvc/listaClientes">Lista</a>
-
+	<a href="/listaClientes">Lista</a>
 </body>
 </html>
