@@ -13,6 +13,10 @@
 			<td>${nome}</td>
 		</tr>
 		<tr>
+			<td>Nome do Filme:</td>
+			<td>${nome}</td>
+		</tr>
+		<tr>
 			<td>CPF:</td>
 			<td>${cpf}</td>
 		</tr>
@@ -43,6 +47,10 @@
 		<tr>
 			<td>Data de Nascimento:</td>
 			<td>${dataNascimento}</td>
+		</tr>
+		<tr>
+			<td>Data de Lançamento:</td>
+			<td>${dataLancamento}</td>
 		</tr>
 	</table>
 	<a href="/index">Cadastro</a>

@@ -30,6 +30,7 @@ public class ClienteController {
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
 		model.addAttribute("nome", cliente.getNome());
+		model.addAttribute("nomeFilme", cliente.getNomeFilme());
 		model.addAttribute("cpf", cliente.getCpf());
 		model.addAttribute("descricao", cliente.getDescricao());
 		model.addAttribute("telefone", cliente.getTelefone());
@@ -37,6 +38,7 @@ public class ClienteController {
 		model.addAttribute("rg", cliente.getRg());
 		model.addAttribute("salario", cliente.getSalario());
 		model.addAttribute("dataNascimento", sdf.format(cliente.getDataNascimento()));
+		model.addAttribute("dataLancamento", sdf.format(cliente.getDataLancamento()));
 		model.addAttribute("profissao", cliente.getProfissao());
 
 		List<Cliente> clientes = (List<Cliente>) request.getSession().getAttribute("clientes");
