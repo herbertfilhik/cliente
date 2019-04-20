@@ -47,7 +47,7 @@
 		</table>
 
 	</c:if>
-	<a href="/index">Cadastro</a>
+	<a href="/spring-webmvc/index">Cadastro</a>
 
 </body>
 </html>

@@ -9,58 +9,58 @@
 
 	<h2>Formulário de Cadastro de Cliente</h2>
 	<h3>Formulário de Cadastro do Diretor e do Filme</h3>
-	<form:form method="POST" action="/addCliente">
+	<form:form method="POST" action="/spring-webmvc/addCliente">
 		<table>
 			<tr>
 				<td><form:label path="nome">Nome:</form:label></td>
-				<td><form:input path="nome" /></td>
+				<td><form:input path="nome" required="required" /></td>
 			</tr>
 			<tr>
 				<td><form:label path="nomeFilme">Nome do Filme:</form:label></td>
-				<td><form:input path="nomeFilme" /></td>
+				<td><form:input path="nomeFilme" required="required" /></td>
 			</tr>
 			<tr>
 				<td><form:label path="cpf">CPF:</form:label></td>
-				<td><form:input path="cpf" /></td>
+				<td><form:input path="cpf" required="required" /></td>
 			</tr>
 			<tr>
 				<td><form:label path="rg">RG:</form:label></td>
-				<td><form:input path="rg" /></td>
+				<td><form:input path="rg" required="required" /></td>
 			</tr>
 			<tr>
 				<td><form:label path="endereco">Endereço:</form:label></td>
-				<td><form:textarea path="endereco" /></td>
+				<td><form:textarea path="endereco" required="required" /></td>
 			</tr>
 			<tr>
 				<td><form:label path="salario">Salário:</form:label></td>
-				<td><form:input path="salario" /></td>
+				<td><form:input path="salario" required="required" /></td>
 			</tr>
 			<tr>
 				<td><form:label path="telefone">Telefone:</form:label></td>
-				<td><form:textarea path="telefone" /></td>
+				<td><form:textarea path="telefone" required="required" /></td>
 			</tr>
 			<tr>
 				<td><form:label path="profissao">Profissão:</form:label></td>
-				<td><form:textarea path="profissao" /></td>
+				<td><form:textarea path="profissao" required="required" /></td>
 			</tr>
 			<tr>
 				<td><form:label path="descricao">Descrição</form:label></td>
-				<td><form:textarea path="descricao" /></td>
+				<td><form:textarea path="descricao" required="required" /></td>
 			</tr>
 			<tr>
 				<td><form:label path="dataNascimento">Data de Nascimento:</form:label></td>
-				<td><form:input path="dataNascimento" /></td>
+				<td><form:input path="dataNascimento" required="required" /></td>
 			</tr>
 			<tr>
 				<td><form:label path="dataLancamento">Data de Lançamento:</form:label></td>
-				<td><form:input path="dataLancamento" /></td>
+				<td><form:input path="dataLancamento" required="required" /></td>
 			</tr>			
 			<tr>
 				<td colspan="2"><input type="submit" value="Submit" /></td>
 			</tr>
 		</table>
 	</form:form>
-	<a href="/listaClientes">Lista</a>
+	<a href="/spring-webmvc/listaClientes">Lista</a>
 
 </body>
 </html>
