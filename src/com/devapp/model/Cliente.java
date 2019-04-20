@@ -105,7 +105,7 @@ public class Cliente {
 		this.profissao = profissao;
 	}
 	
-	public void isValid() {
+	/*public void isValid() {
 		System.out.println(nome);
-	}
+	}*/
 }
