@@ -20,11 +20,11 @@
 			</tr>
 			<tr>
 				<td><form:label path="cpf">CPF:</form:label></td>
-				<td><form:input path="cpf" required="required" /></td>
+				<td><form:input path="cpf" pattern="^[0-9]{3}\.[0-9]{3}\.[0-9]{3}\-[0-9]{2}$" required="required" /></td>
 			</tr>
 			<tr>
 				<td><form:label path="rg">RG:</form:label></td>
-				<td><form:input path="rg" required="required" /></td>
+				<td><form:input path="rg" pattern="^[0-9]{2}\.[0-9]{3}\.[0-9]{3}\-[0-9]{1}$" required="required" /></td>
 			</tr>
 			<tr>
 				<td><form:label path="endereco">Endereço:</form:label></td>
@@ -36,7 +36,7 @@
 			</tr>
 			<tr>
 				<td><form:label path="telefone">Telefone:</form:label></td>
-				<td><form:textarea path="telefone" required="required" /></td>
+				<td><form:textarea path="telefone" pattern="^(?:\+)[0-9]{2}\s?(?:\()[0-9]{2}(?:\))\s?[0-9]{4,5}(?:-)[0-9]{4}$" required="required" /></td>
 			</tr>
 			<tr>
 				<td><form:label path="profissao">Profissão:</form:label></td>
