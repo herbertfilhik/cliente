@@ -1,4 +1,4 @@
-package com.devmedia.model;
+package com.devapp.model;
 
 import java.util.Date;
 

@@ -1,4 +1,4 @@
-package com.devmedia.controller;
+package com.devapp.controller;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.devmedia.model.Cliente;
+import com.devapp.model.Cliente;
 
 @Controller
 public class ClienteController {
