@@ -35,16 +35,16 @@
 				<td><form:input path="salario" required="required" /></td>
 			</tr>
 			<tr>
-				<td><form:label path="telefone">Telefone:</form:label></td>
-				<td><form:textarea path="telefone" pattern="^(?:\+)[0-9]{2}\s?(?:\()[0-9]{2}(?:\))\s?[0-9]{4,5}(?:-)[0-9]{4}$" required="required" /></td>
+				<td><form:label path="telefone">Telefone: +99(99)9999-9999</form:label></td>
+				<td><form:input path="telefone" pattern="^(?:\+)[0-9]{2}\s?(?:\()[0-9]{2}(?:\))\s?[0-9]{4,5}(?:-)[0-9]{4}$" required="required" /></td>
 			</tr>
 			<tr>
 				<td><form:label path="profissao">Profissão:</form:label></td>
-				<td><form:textarea path="profissao" required="required" /></td>
+				<td><form:input path="profissao" required="required" /></td>
 			</tr>
 			<tr>
 				<td><form:label path="descricao">Descrição</form:label></td>
-				<td><form:textarea path="descricao" required="required" /></td>
+				<td><form:input path="descricao" required="required" /></td>
 			</tr>
 			<tr>
 				<td><form:label path="dataNascimento">Data de Nascimento: dd/mm/aaaa</form:label></td>
