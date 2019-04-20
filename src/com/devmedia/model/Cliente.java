@@ -103,5 +103,8 @@ public class Cliente {
 	public void setProfissao(String profissao) {
 		this.profissao = profissao;
 	}
-
+	
+	public void isValid() {
+		System.out.println(nome);
+	}
 }
