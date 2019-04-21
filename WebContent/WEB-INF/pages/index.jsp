@@ -20,11 +20,11 @@
 			</tr>
 			<tr>
 				<td><form:label path="cpf">CPF:</form:label></td>
-				<td><form:input path="cpf" required="required" /></td>
+				<td><form:input path="cpf" pattern="([0-9]{2}[\.]?[0-9]{3}[\.]?[0-9]{3}[\/]?[0-9]{4}[-]?[0-9]{2})|([0-9]{3}[\.]?[0-9]{3}[\.]?[0-9]{3}[-]?[0-9]{2})" required="required" /></td>
 			</tr>
 			<tr>
 				<td><form:label path="rg">RG:</form:label></td>
-				<td><form:input path="rg" required="required" /></td>
+				<td><form:input path="rg" pattern="(^(\d{2}\x2E\d{3}\x2E\d{3}[-]\d{1})$|^(\d{2}\x2E\d{3}\x2E\d{3})$)" required="required" /></td>
 			</tr>
 			<tr>
 				<td><form:label path="endereco">Endereço:</form:label></td>
@@ -48,11 +48,11 @@
 			</tr>
 			<tr>
 				<td><form:label path="dataNascimento">Data de Nascimento: dd/mm/aaaa</form:label></td>
-				<td><form:input path="dataNascimento" pattern="^([0-2][0-9]|(3)[0-1])(\/)(((0)[0-9])|((1)[0-2]))(\/)\d{4}$" required="required" /></td>
+				<td><form:input path="dataNascimento" required="required" /></td>
 			</tr>
 			<tr>
 				<td><form:label path="dataLancamento">Data de Lançamento: dd/mm/aaaa</form:label></td>
-				<td><form:input path="dataLancamento" pattern="^([0-2][0-9]|(3)[0-1])(\/)(((0)[0-9])|((1)[0-2]))(\/)\d{4}$" required="required" /></td>
+				<td><form:input path="dataLancamento" required="required" /></td>
 			</tr>
 			<tr>
 				<td colspan="2"><input type="submit" value="Submit" /></td>
