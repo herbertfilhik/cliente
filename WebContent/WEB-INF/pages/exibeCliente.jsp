@@ -14,7 +14,7 @@
 		</tr>
 		<tr>
 			<td>Nome do Filme:</td>
-			<td>${nome}</td>
+			<td>${nomeFilme}</td>
 		</tr>
 		<tr>
 			<td>CPF:</td>
