@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class Cliente {
 
-	//campos
+	//campos de input
 	private String nome;
 	private String nomeFilme;
 	private String cpf;
