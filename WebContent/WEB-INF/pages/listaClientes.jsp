@@ -21,7 +21,6 @@
 				<td>Salário</td>
 				<td>Data de Nascimento</td>
 				<td>Data de Lançamento</td>
-
 			</tr>
 
 
@@ -37,8 +36,8 @@
 					<td>${listValue.profissao}</td>
 					<td>${listValue.rg}</td>
 					<td>${listValue.salario}</td>
-					<td>${listValue.dataNascimento}></td>
-					<td>${listValue.dataLancamento}"></td>
+					<td>${listValue.dataNascimento}</td>
+					<td>${listValue.dataLancamento}</td>
 				</tr>
 			</c:forEach>
 
