@@ -1,6 +1,5 @@
 package com.devapp.model;
 
-import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Cliente {
@@ -74,18 +73,16 @@ public class Cliente {
 		this.rg = rg;
 	}
 
-	public String getDataNascimento() {
-		SimpleDateFormat dataNascimento = new SimpleDateFormat("dd/MM/yyyy");
-		return dataNascimento.format(getDataLancamento());		
+	public Date getDataNascimento() {
+		return dataNascimento;
 	}
 	
 	public void setDataNascimento(Date dataNascimento) {
 		this.dataNascimento = dataNascimento;
 	}
 	
-	public String getDataLancamento() {
-		SimpleDateFormat dataLancamento = new SimpleDateFormat("dd/MM/yyyy");
-		return dataLancamento.format(getDataLancamento());
+	public Date getDataLancamento() {
+		return dataLancamento;
 	}
 	
 	public void setDataLancamento(Date dataLancamento) {
