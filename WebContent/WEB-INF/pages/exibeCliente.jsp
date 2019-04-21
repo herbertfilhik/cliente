@@ -53,8 +53,7 @@
 			<td>${dataLancamento}</td>	
 		</tr>
 	</table>
-	<a href="/spring-webmvc/index">Cadastro</a>
-	<a href="/spring-webmvc/listaClientes">Lista</a>
-
+	<a href="/index">Cadastro</a>
+	<a href="/listaClientes">Lista</a>
 </body>
 </html>
