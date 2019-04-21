@@ -48,7 +48,7 @@ public class ClienteController {
 		model.addAttribute("rg", cliente.getRg());
 		model.addAttribute("salario", cliente.getSalario());
 		model.addAttribute("dataNascimento", cliente.getDataNascimento());
-		model.addAttribute("dataLancamento", sdf.format(cliente.getDataLancamento()));
+		model.addAttribute("dataLancamento", cliente.getDataLancamento());
 		model.addAttribute("profissao", cliente.getProfissao());
 		
 		System.out.println(cliente.getDataNascimento());

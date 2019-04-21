@@ -16,7 +16,7 @@ public class Cliente {
 	private String descricao;
 	private String profissao;
 	private String dataNascimento;
-	private Date dataLancamento;	
+	private String dataLancamento;	
 	private float salario;
 
 	public String getNome() {
@@ -83,11 +83,11 @@ public class Cliente {
 		this.dataNascimento = dataNascimento;
 	}
 	
-	public Date getDataLancamento() {
+	public String getDataLancamento() {
 		return dataLancamento;
 	}
 	
-	public void setDataLancamento(Date dataLancamento) {
+	public void setDataLancamento(String dataLancamento) {
 		this.dataLancamento = dataLancamento;
 	}
 

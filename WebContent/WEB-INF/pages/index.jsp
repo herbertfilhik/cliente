@@ -46,7 +46,7 @@
 				<td><input name="descricao" required="required" /></td>
 			</tr>
 			<tr>
-				<td><label path="dataNascimento">Data de Nascimento: dd/mm/aaaa</label></td>]
+				<td><label path="dataNascimento">Data de Nascimento: dd/mm/aaaa</label></td>
 				<fmt:formatDate value="${dtnasc}" pattern="dd/MM/yyyy" var="dataNascimento" />
 				<td><input id="dtnasc" name="dataNascimento" required="required" /></td>
 			<tr>
