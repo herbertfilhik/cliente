@@ -2,6 +2,8 @@ package com.devapp.model;
 
 import java.util.Date;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 public class Cliente {
 
 	//campos de input
@@ -13,7 +15,7 @@ public class Cliente {
 	private String endereco;
 	private String descricao;
 	private String profissao;
-	private Date dataNascimento;
+	private String dataNascimento;
 	private Date dataLancamento;	
 	private float salario;
 
@@ -73,11 +75,11 @@ public class Cliente {
 		this.rg = rg;
 	}
 
-	public Date getDataNascimento() {
+	public String getDataNascimento() {
 		return dataNascimento;
 	}
 	
-	public void setDataNascimento(Date dataNascimento) {
+	public void setDataNascimento(String dataNascimento) {
 		this.dataNascimento = dataNascimento;
 	}
 	

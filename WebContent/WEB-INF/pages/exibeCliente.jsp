@@ -46,15 +46,15 @@
 		</tr>
 		<tr>
 			<td>Data de Nascimento:</td>
-			<td><fmt:formatDate pattern="dd/MM/yyyy" value="${dataNascimento}" /></td>
+			<td>${dataNascimento}</td>
 		</tr>
 		<tr>
 			<td>Data de Lançamento:</td>
-			<td><fmt:formatDate pattern="dd/MM/yyyy" value="${dataLancamento}" /></td>	
+			<td>${dataLancamento}</td>	
 		</tr>
 	</table>
-	<a href="/index">Cadastro</a>
-	<a href="/listaClientes">Lista</a>
+	<a href="/spring-webmvc/index">Cadastro</a>
+	<a href="/spring-webmvc/listaClientes">Lista</a>
 
 </body>
 </html>

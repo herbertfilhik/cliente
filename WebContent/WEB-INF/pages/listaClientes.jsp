@@ -36,15 +36,15 @@
 					<td>${listValue.profissao}</td>
 					<td>${listValue.rg}</td>
 					<td>${listValue.salario}</td>
-					<td>${listValue.dataNascimento}</td>
-					<td>${listValue.dataLancamento}</td>
+					<td><fmt:formatDate pattern="dd/MM/yyyy" value="${listValue.dataNascimento}" /></td>
+					<td><fmt:formatDate pattern="dd/MM/yyyy" value="${listValue.dataLancamento}" /></td>
 				</tr>
 			</c:forEach>
 
 		</table>
 
 	</c:if>
-	<a href="/index">Cadastro</a>
+	<a href="/spring-webmvc/index">Cadastro</a>
 
 </body>
 </html>
