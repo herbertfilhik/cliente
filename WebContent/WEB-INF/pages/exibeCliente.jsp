@@ -50,11 +50,10 @@
 		</tr>
 		<tr>
 			<td>Data de Lançamento:</td>
-			<td>${dataLancamento}</td>
+			<td>${dataLancamento}</td>	
 		</tr>
 	</table>
 	<a href="/index">Cadastro</a>
 	<a href="/listaClientes">Lista</a>
-
 </body>
 </html>

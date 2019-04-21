@@ -1,6 +1,5 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
-<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <html>
 <head>
 <title>Cadastro de Cliente</title>
@@ -8,57 +7,58 @@
 <body>
 	<h2>Formulário de Cadastro de Cliente</h2>
 	<h3>Formulário de Cadastro do Diretor e do Filme</h3>
-	<form:form method="POST" action="/addCliente">
+	<form method="POST" action="/addCliente">
 		<table>
 			<tr>
-				<td><form:label path="nome">Nome:</form:label></td>
-				<td><form:input path="nome" required="required" /></td>
+				<td><label path="nome">Nome:</label></td>
+				<td><input name="nome" required="required" /></td>
 			</tr>
 			<tr>
-				<td><form:label path="nomeFilme">Nome do Filme:</form:label></td>
-				<td><form:input path="nomeFilme" required="required" /></td>
+				<td><label path="nomeFilme">Nome do Filme:</label></td>
+				<td><input name="nomeFilme" required="required" /></td>
 			</tr>
 			<tr>
-				<td><form:label path="cpf">CPF:</form:label></td>
-				<td><form:input path="cpf" pattern="([0-9]{2}[\.]?[0-9]{3}[\.]?[0-9]{3}[\/]?[0-9]{4}[-]?[0-9]{2})|([0-9]{3}[\.]?[0-9]{3}[\.]?[0-9]{3}[-]?[0-9]{2})" required="required" /></td>
+				<td><label path="cpf">CPF:</label></td>
+				<td><input name="cpf" pattern="([0-9]{2}[\.]?[0-9]{3}[\.]?[0-9]{3}[\/]?[0-9]{4}[-]?[0-9]{2})|([0-9]{3}[\.]?[0-9]{3}[\.]?[0-9]{3}[-]?[0-9]{2})" required="required" /></td>
 			</tr>
 			<tr>
-				<td><form:label path="rg">RG:</form:label></td>
-				<td><form:input path="rg" pattern="(^(\d{2}\x2E\d{3}\x2E\d{3}[-]\d{1})$|^(\d{2}\x2E\d{3}\x2E\d{3})$)" required="required" /></td>
+				<td><label path="rg">RG:</label></td>
+				<td><input name="rg" pattern="(^(\d{2}\x2E\d{3}\x2E\d{3}[-]\d{1})$|^(\d{2}\x2E\d{3}\x2E\d{3})$)" required="required" /></td>
 			</tr>
 			<tr>
-				<td><form:label path="endereco">Endereço:</form:label></td>
-				<td><form:textarea path="endereco" required="required" /></td>
+				<td><label path="endereco">Endereço:</label></td>
+				<td><textarea name="endereco" required="required"></textarea></td>
 			</tr>
 			<tr>
-				<td><form:label path="salario">Salário:</form:label></td>
-				<td><form:input path="salario" required="required" /></td>
+				<td><label path="salario">Salário:</label></td>
+				<td><input name="salario" required="required" /></td>
 			</tr>
 			<tr>
-				<td><form:label path="telefone">Telefone: +99(99)9999-9999</form:label></td>
-				<td><form:input path="telefone" pattern="^(?:\+)[0-9]{2}\s?(?:\()[0-9]{2}(?:\))\s?[0-9]{4,5}(?:-)[0-9]{4}$" required="required" /></td>
+				<td><label path="telefone">Telefone: +99(99)9999-9999</label></td>
+				<td><input name="telefone" pattern="^(?:\+)[0-9]{2}\s?(?:\()[0-9]{2}(?:\))\s?[0-9]{4,5}(?:-)[0-9]{4}$" required="required" /></td>
 			</tr>
 			<tr>
-				<td><form:label path="profissao">Profissão:</form:label></td>
-				<td><form:input path="profissao" required="required" /></td>
+				<td><label path="profissao">Profissão:</label></td>
+				<td><input name="profissao" required="required" /></td>
 			</tr>
 			<tr>
-				<td><form:label path="descricao">Descrição</form:label></td>
-				<td><form:input path="descricao" required="required" /></td>
+				<td><label path="descricao">Descrição</label></td>
+				<td><input name="descricao" required="required" /></td>
 			</tr>
 			<tr>
-				<td><form:label path="dataNascimento">Data de Nascimento: dd/mm/aaaa</form:label></td>
-				<td><form:input path="dataNascimento" pattern="^([0-2][0-9]|(3)[0-1])(\/)(((0)[0-9])|((1)[0-2]))(\/)\d{4}$" required="required" /></td>
-			</tr>
+				<td><label path="dataNascimento">Data de Nascimento: dd/mm/aaaa</label></td>
+				<fmt:formatDate value="${dtnasc}" pattern="dd/MM/yyyy" var="dataNascimento" />
+				<td><input id="dtnasc" name="dataNascimento" required="required" /></td>
 			<tr>
-				<td><form:label path="dataLancamento">Data de Lançamento: dd/mm/aaaa</form:label></td>
-				<td><form:input path="dataLancamento" pattern="^([0-2][0-9]|(3)[0-1])(\/)(((0)[0-9])|((1)[0-2]))(\/)\d{4}$" required="required" /></td>
+			</tr>
+				<td><label path="dataLancamento">Data de Lançamento: dd/mm/aaaa</label></td>
+				<td><input name="dataLancamento" pattern="(0[1-9]|1[0-9]|2[0-9]|3[01])/(0[1-9]|1[012])/[0-9]{4}" required="required" /></td>
 			</tr>
 			<tr>
 				<td colspan="2"><input type="submit" value="Submit" /></td>
 			</tr>
 		</table>
-	</form:form>
+	</form>
 	<a href="/listaClientes">Lista</a>
 </body>
 </html>

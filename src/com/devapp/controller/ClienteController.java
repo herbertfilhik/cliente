@@ -2,6 +2,7 @@ package com.devapp.controller;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
@@ -19,7 +20,7 @@ import com.devapp.model.Cliente;
 @Controller
 public class ClienteController {
 
-	@RequestMapping(value = {"/", "index"}, method = RequestMethod.GET)
+	@RequestMapping(value = { "/", "index" }, method = RequestMethod.GET)
 	public ModelAndView cliente() {
 		return new ModelAndView("index", "command", new Cliente());
 	}
@@ -28,8 +29,16 @@ public class ClienteController {
 	public String adicionarCliente(@ModelAttribute("SpringWeb") Cliente cliente, ModelMap model,
 			HttpServletRequest request) {
 
-		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+		/*Calendar calendar = Calendar.getInstance();
+		calendar.setTime(cliente.getDataNascimento());
+		int diaDoMes = calendar.get(Calendar.DAY_OF_MONTH)-1;
+		int mes = calendar.get(Calendar.MONTH)+1;
+		calendar.set(Calendar.DAY_OF_MONTH, mes);
+		calendar.set(Calendar.MONTH, diaDoMes);
+		cliente.setDataNascimento(calendar.getTime());*/ 
 		
+		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+
 		model.addAttribute("nome", cliente.getNome());
 		model.addAttribute("nomeFilme", cliente.getNomeFilme());
 		model.addAttribute("cpf", cliente.getCpf());
@@ -38,9 +47,12 @@ public class ClienteController {
 		model.addAttribute("endereco", cliente.getEndereco());
 		model.addAttribute("rg", cliente.getRg());
 		model.addAttribute("salario", cliente.getSalario());
-		model.addAttribute("dataNascimento", sdf.format(cliente.getDataNascimento()));
-		model.addAttribute("dataLancamento", sdf.format(cliente.getDataLancamento()));
+		model.addAttribute("dataNascimento", cliente.getDataNascimento());
+		model.addAttribute("dataLancamento", cliente.getDataLancamento());
 		model.addAttribute("profissao", cliente.getProfissao());
+		
+		System.out.println(cliente.getDataNascimento());
+		System.out.println(cliente.getDataLancamento());
 
 		List<Cliente> clientes = (List<Cliente>) request.getSession().getAttribute("clientes");
 		if (clientes == null) {
