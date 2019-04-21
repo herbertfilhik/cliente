@@ -28,8 +28,6 @@ public class ClienteController {
 	public String adicionarCliente(@ModelAttribute("SpringWeb") Cliente cliente, ModelMap model,
 			HttpServletRequest request) {
 
-		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
-		
 		model.addAttribute("nome", cliente.getNome());
 		model.addAttribute("nomeFilme", cliente.getNomeFilme());
 		model.addAttribute("cpf", cliente.getCpf());
@@ -38,8 +36,8 @@ public class ClienteController {
 		model.addAttribute("endereco", cliente.getEndereco());
 		model.addAttribute("rg", cliente.getRg());
 		model.addAttribute("salario", cliente.getSalario());
-		model.addAttribute("dataNascimento", sdf.format(cliente.getDataNascimento()));
-		model.addAttribute("dataLancamento", sdf.format(cliente.getDataLancamento()));
+		model.addAttribute("dataNascimento", cliente.getDataNascimento());
+		model.addAttribute("dataLancamento", cliente.getDataLancamento());
 		model.addAttribute("profissao", cliente.getProfissao());
 
 		List<Cliente> clientes = (List<Cliente>) request.getSession().getAttribute("clientes");

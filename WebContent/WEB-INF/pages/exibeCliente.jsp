@@ -46,11 +46,11 @@
 		</tr>
 		<tr>
 			<td>Data de Nascimento:</td>
-			<td>${dataNascimento}></td>
+			<td>${dataNascimento}</td>
 		</tr>
 		<tr>
 			<td>Data de Lançamento:</td>
-     		<td>${dataLancamento}></td>	
+     		<td>${dataLancamento}</td>	
 		</tr>
 	</table>
 	<a href="/index">Cadastro</a>
