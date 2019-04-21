@@ -38,7 +38,7 @@
 					<td>${listValue.rg}</td>
 					<td>${listValue.salario}</td>
 					<td>${listValue.dataNascimento}></td>
-					<td>"${listValue.dataLancamento}"></td>
+					<td>${listValue.dataLancamento}"></td>
 				</tr>
 			</c:forEach>
 
