@@ -46,13 +46,11 @@
 		</tr>
 		<tr>
 			<td>Data de Nascimento:</td>
-			<td><fmt:formatDate pattern="dd/MM/yyyy HH"
-					value="${dataNascimento}" /></td>
+			<td><fmt:formatDate pattern="dd/MM/yyyy" value="${dataNascimento}" /></td>
 		</tr>
 		<tr>
 			<td>Data de Lançamento:</td>
-			<td><fmt:formatDate pattern="dd/MM/yyyy HH"
-					value="${dataLancamento}" /></td>
+			<td><fmt:formatDate pattern="dd/MM/yyyy" value="${dataLancamento}" /></td>
 		</tr>
 	</table>
 	<a href="/index">Cadastro</a>
