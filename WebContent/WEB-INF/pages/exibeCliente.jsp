@@ -50,7 +50,7 @@
 		</tr>
 		<tr>
 			<td>Data de Lançamento:</td>
-     		<td><fmt:formatDate pattern="dd/MM/yyyy" value="${dataLancamento}" /></td>	
+     		<td>${dataLancamento}></td>	
 		</tr>
 	</table>
 	<a href="/index">Cadastro</a>

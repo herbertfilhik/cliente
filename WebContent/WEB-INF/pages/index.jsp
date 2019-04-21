@@ -48,11 +48,11 @@
 			</tr>
 			<tr>
 				<td><form:label path="dataNascimento">Data de Nascimento: dd/mm/aaaa</form:label></td>
-				<td><form:input path="dataNascimento" pattern="^([0-2][0-9]|(3)[0-1])(\/)(((0)[0-9])|((1)[0-2]))(\/)\d{4}$" required="required" /></td>
+				<td><form:input path="dataNascimento" formatDate pattern="dd/MM/yyyy" pattern="^([0-2][0-9]|(3)[0-1])(\/)(((0)[0-9])|((1)[0-2]))(\/)\d{4}$" required="required" /></td>
 			</tr>
 			<tr>
 				<td><form:label path="dataLancamento">Data de Lançamento: dd/mm/aaaa</form:label></td>
-				<td><form:input path="dataLancamento" pattern="^([0-2][0-9]|(3)[0-1])(\/)(((0)[0-9])|((1)[0-2]))(\/)\d{4}$" required="required" /></td>
+				<td><form:input path="dataLancamento" formatDate pattern="dd/MM/yyyy" pattern="^([0-2][0-9]|(3)[0-1])(\/)(((0)[0-9])|((1)[0-2]))(\/)\d{4}$" required="required" /></td>
 			</tr>
 			<tr>
 				<td colspan="2"><input type="submit" value="Submit" /></td>
