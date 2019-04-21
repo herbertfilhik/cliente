@@ -46,7 +46,7 @@
 		</tr>
 		<tr>
 			<td>Data de Nascimento:</td>
-			<td>${dataNascimento}</td>
+			<td><fmt:formatDate pattern="dd/MM/yyyy" value="${dataNascimento}" /></td>
 		</tr>
 		<tr>
 			<td>Data de Lançamento:</td>
